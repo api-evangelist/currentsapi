@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://currentsapi.services/schema/news",
+  "title": "News",
+  "description": "A news article returned by the Currents API",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the news article"
+    },
+    "title": {
+      "type": "string",
+      "description": "Headline of the news article",
+      "example": "Investors are taking a gamble on Bitcoin"
+    },
+    "description": {
+      "type": "string",
+      "description": "Summary or excerpt of the news article"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to the full news article"
+    },
+    "author": {
+      "type": "string",
+      "description": "Author or source name of the article"
+    },
+    "image": {
+      "type": "string",
+      "description": "URL to the article's featured image"
+    },
+    "language": {
+      "type": "string",
+      "description": "ISO 639-1 language code of the article",
+      "example": "en"
+    },
+    "category": {
+      "type": "array",
+      "description": "Categories assigned to the article",
+      "items": {
+        "type": "string",
+        "enum": [
+          "regional", "technology", "lifestyle", "business", "general",
+          "programming", "science", "entertainment", "world", "sports",
+          "finance", "academia", "politics", "health", "opinion", "food", "game"
+        ]
+      }
+    },
+    "published": {
+      "type": "string",
+      "description": "Publication date and time in UTC",
+      "example": "2019-08-04 14:22:08 +0000"
+    }
+  },
+  "required": ["id", "title", "url"],
+  "additionalProperties": false
+}

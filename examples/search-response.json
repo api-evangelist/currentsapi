@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "news": [
+    {
+      "id": "ac4062d1-5fbb-4784-bf1d-6b50f5f643a0",
+      "title": "Tulevaisuustutkija Markku Wilenius tietää, että 10 vuoden päästä elämme täysin erilaisessa maailmassa",
+      "description": "Elämä on tähän saakka pyörinyt perustarpeiden ympärillä. Meille on riittänyt, että suuhun on saanut syötävää, on ollut paikka missä asua, puoliso, kavereita ja mahdollisuus hiukan toteuttaa itseään.",
+      "url": "https://yle.fi/uutiset/3-10905769?origin=rss",
+      "author": "yle",
+      "image": "//images.cdn.yle.fi/image/upload/w_960,h_640/13-3-10906278.jpg",
+      "language": "fi",
+      "category": ["general"],
+      "published": "2019-08-04 14:22:08 +0000"
+    },
+    {
+      "id": "713f0c68-9bac-4168-9880-c94eecaf735f",
+      "title": "Tubettaja muuttaa vuodeksi Sodankylään ja markkinoi kuntaa somessaan",
+      "description": "Kunnissa tiedostetaan, kuinka tärkeää oikeiden mielikuvien luominen on, kun yritetään houkutella uusia asukkaita.",
+      "url": "https://yle.fi/uutiset/3-10908157?origin=rss",
+      "author": "yle",
+      "image": "None",
+      "language": "fi",
+      "category": ["general"],
+      "published": "2019-08-04 14:22:08 +0000"
+    }
+  ]
+}

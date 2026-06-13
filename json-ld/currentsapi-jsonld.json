@@ -1,0 +1,50 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "currents": "https://currentsapi.services/vocab#",
+    "id": "@id",
+    "title": "headline",
+    "description": "description",
+    "url": "url",
+    "author": "author",
+    "image": "image",
+    "language": "inLanguage",
+    "category": "about",
+    "published": "datePublished",
+    "news": "currents:news",
+    "status": "currents:status",
+    "languages": "currents:languages",
+    "categories": "currents:categories",
+    "regions": "currents:regions"
+  },
+  "@type": "WebAPI",
+  "name": "Currents API",
+  "description": "Latest news REST API aggregating real-time global news from 120,000+ sources worldwide with search, language filtering, category filtering, topic-based queries, and regional coverage across 70+ countries in 20+ languages.",
+  "url": "https://currentsapi.services/en",
+  "documentation": "https://currentsapi.services/en/docs/",
+  "termsOfService": "https://currentsapi.services/terms",
+  "provider": {
+    "@type": "Organization",
+    "name": "Currents Lab",
+    "email": "hi@currentsapi.services",
+    "url": "https://currentsapi.services/en"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://currentsapi.services/en/product/price"
+  },
+  "potentialAction": [
+    {
+      "@type": "SearchAction",
+      "name": "Search News",
+      "description": "Search news articles by keyword, language, category, country, and date range",
+      "target": "https://api.currentsapi.services/v1/search"
+    },
+    {
+      "@type": "ReadAction",
+      "name": "Get Latest News",
+      "description": "Retrieve the most recent news articles, optionally filtered by language",
+      "target": "https://api.currentsapi.services/v1/latest-news"
+    }
+  ]
+}

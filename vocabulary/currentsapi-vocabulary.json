@@ -1,0 +1,80 @@
+{
+  "title": "Currents API Vocabulary",
+  "description": "Domain terms and concepts used in the Currents API",
+  "version": "1.0.0",
+  "source": "https://currentsapi.services",
+  "terms": [
+    {
+      "term": "news",
+      "definition": "A news article aggregated from one of 120,000+ global sources",
+      "type": "entity"
+    },
+    {
+      "term": "language",
+      "definition": "ISO 639-1 two-letter code identifying the language of a news article",
+      "type": "filter",
+      "examples": ["en", "fr", "de", "es", "zh", "ar", "hi", "ja"]
+    },
+    {
+      "term": "category",
+      "definition": "A topical classification assigned to a news article",
+      "type": "filter",
+      "values": [
+        "regional", "technology", "lifestyle", "business", "general",
+        "programming", "science", "entertainment", "world", "sports",
+        "finance", "academia", "politics", "health", "opinion", "food", "game"
+      ]
+    },
+    {
+      "term": "country",
+      "definition": "ISO 3166-1 alpha-2 country code for regional news filtering",
+      "type": "filter",
+      "examples": ["US", "GB", "CA", "AU", "DE", "FR"]
+    },
+    {
+      "term": "keywords",
+      "definition": "Search terms used to filter news articles by content relevance",
+      "type": "filter"
+    },
+    {
+      "term": "start_date",
+      "definition": "Lower bound for article publication date in ISO 8601 format (YYYY-MM-DDTHH:MM:SS+00:00)",
+      "type": "filter"
+    },
+    {
+      "term": "end_date",
+      "definition": "Upper bound for article publication date in ISO 8601 format (YYYY-MM-DDTHH:MM:SS+00:00)",
+      "type": "filter"
+    },
+    {
+      "term": "latest-news",
+      "definition": "The most recently published news articles from all tracked sources",
+      "type": "endpoint-concept"
+    },
+    {
+      "term": "search",
+      "definition": "Full-text and filter-based search across the indexed news corpus",
+      "type": "endpoint-concept"
+    },
+    {
+      "term": "available/languages",
+      "definition": "The set of language codes currently supported for filtering",
+      "type": "endpoint-concept"
+    },
+    {
+      "term": "available/regions",
+      "definition": "The set of country or region codes currently supported for filtering",
+      "type": "endpoint-concept"
+    },
+    {
+      "term": "available/categories",
+      "definition": "The set of category labels currently supported for filtering",
+      "type": "endpoint-concept"
+    },
+    {
+      "term": "APIKeyHeader",
+      "definition": "Authentication mechanism using an API key supplied in the Authorization HTTP header",
+      "type": "security"
+    }
+  ]
+}

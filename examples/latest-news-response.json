@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "news": [
+    {
+      "id": "ac4062d1-5fbb-4784-bf1d-6b50f5f643a0",
+      "title": "Sample Latest News Article Title",
+      "description": "A brief excerpt from the latest news article describing its content.",
+      "url": "https://example.com/news/article-1",
+      "author": "example-source",
+      "image": "https://example.com/images/article-1.jpg",
+      "language": "en",
+      "category": ["technology"],
+      "published": "2024-01-15 10:30:00 +0000"
+    }
+  ]
+}
