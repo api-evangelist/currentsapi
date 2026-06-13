@@ -1,0 +1,63 @@
+aid: currentsapi
+name: Currents API
+description: Latest news REST API aggregating real-time global news from 120,000+ sources worldwide with search, language filtering, category filtering, topic-based queries, and regional coverage across 70+ countries in 20+ languages.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/currentsapi/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - News
+  - Media
+  - Search
+  - REST
+  - Real-Time
+apis:
+  - aid: currentsapi:currents-news-api
+    name: Currents News API
+    description: Real-time global news data in JSON format with developer-friendly endpoints for searching, filtering by language, category, and region, and accessing the latest headlines from 120,000+ sources worldwide.
+    humanURL: https://currentsapi.services/en
+    baseURL: https://api.currentsapi.services/v1
+    tags:
+      - News
+      - Search
+      - Real-Time
+      - REST
+    properties:
+      - type: Documentation
+        url: https://currentsapi.services/en/docs/
+      - type: OpenAPI
+        url: https://currentsapi.services/json/swagger.json
+      - type: Authentication
+        url: https://currentsapi.services/en/docs/authentication
+      - type: RateLimits
+        url: https://currentsapi.services/en/docs/ratelimit
+      - type: Pricing
+        url: https://currentsapi.services/en/product/price
+    contact:
+      - FN: Currents Lab
+        email: hi@currentsapi.services
+        url: https://currentsapi.services/en
+common:
+  - type: Website
+    url: https://currentsapi.services/en
+  - type: Documentation
+    url: https://currentsapi.services/en/docs/
+  - type: GitHubOrg
+    url: https://github.com/currentslab
+  - type: Blog
+    url: https://currentslab.github.io
+  - type: Pricing
+    url: https://currentsapi.services/en/product/price
+  - type: StatusPage
+    url: https://currentsapi.services/en/status
+  - type: Plans
+    url: https://raw.githubusercontent.com/api-evangelist/currentsapi/refs/heads/main/plans/currentsapi-plans-pricing.yml
+  - type: RateLimits
+    url: https://raw.githubusercontent.com/api-evangelist/currentsapi/refs/heads/main/rate-limits/currentsapi-rate-limits.yml
+  - type: FinOps
+    url: https://raw.githubusercontent.com/api-evangelist/currentsapi/refs/heads/main/finops/currentsapi-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

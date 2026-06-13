@@ -1,0 +1,30 @@
+name: Currents API Rate Limits
+description: Rate limiting policies for the Currents News API
+url: https://currentsapi.services/en/docs/ratelimit
+rate_limits:
+  - plan: Developer
+    requests_per_day: 1000
+    billing_period: daily
+  - plan: Builder
+    requests_per_month: 75000
+    billing_period: monthly
+  - plan: Professional
+    requests_per_month: 300000
+    billing_period: monthly
+  - plan: Enterprise
+    requests_per_month: 600000
+    billing_period: monthly
+headers:
+  - name: X-RateLimit-Remaining
+    description: Indicates the remaining number of API calls available for your API key
+  - name: X-RateLimit-Limit
+    description: Displays the total daily or monthly limit of API calls for your API key
+enforcement:
+  - Persistent or excessive violations may lead to account suspension
+  - Responses include rate limit headers to help track quota usage
+  - Throttling applies when quota is exceeded
+best_practices:
+  - Monitor X-RateLimit-Remaining header to track usage
+  - Implement exponential backoff on 429 responses
+  - Cache responses where possible to reduce API calls
+  - Use date range parameters to limit result sets

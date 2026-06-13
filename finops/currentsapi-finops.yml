@@ -1,0 +1,53 @@
+name: Currents API FinOps
+description: Financial operations guidance for managing Currents News API costs
+url: https://currentsapi.services/en/product/price
+cost_model:
+  type: subscription
+  unit: requests
+  free_tier: true
+  free_tier_details:
+    requests_per_day: 1000
+    cost: 0
+cost_optimization:
+  - Use the free Developer tier for development and testing
+  - Choose annual billing for 20% savings over monthly plans
+  - Cache API responses to reduce redundant requests
+  - Use specific search filters (language, category, country) to retrieve only needed articles
+  - Monitor X-RateLimit-Remaining header to avoid exceeding quota
+  - Implement request batching using the max results parameter
+  - Use /latest-news for general feeds and /search only when filtering is required
+pricing_tiers:
+  - name: Developer
+    monthly_cost: 0
+    annual_cost: 0
+    cost_per_request: 0
+    requests_per_month: 30000
+  - name: Builder
+    monthly_cost: 69
+    annual_cost: 690
+    cost_per_request: 0.00092
+    requests_per_month: 75000
+  - name: Professional
+    monthly_cost: 150
+    annual_cost: 1500
+    cost_per_request: 0.0005
+    requests_per_month: 300000
+  - name: Enterprise
+    monthly_cost: 300
+    annual_cost: 3000
+    cost_per_request: 0.0005
+    requests_per_month: 600000
+value_metrics:
+  - metric: cost_per_request
+    value: 0.0005
+    unit: USD
+    description: Advertised as lowest in market at $0.0005 per request (2000 requests per dollar)
+  - metric: sla_uptime
+    value: 99.97
+    unit: percent
+    description: SLA uptime guarantee on paid plans
+budget_alerts:
+  - Monitor monthly request consumption against plan limits
+  - Set up alerts when approaching 80% of monthly quota
+  - Evaluate upgrading plan if consistently hitting limits
+  - Downgrade to free tier available upon cancellation

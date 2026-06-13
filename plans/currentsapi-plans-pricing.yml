@@ -1,0 +1,63 @@
+name: Currents API Plans and Pricing
+description: Pricing plans for the Currents News API providing real-time global news data
+url: https://currentsapi.services/en/product/price
+plans:
+  - name: Developer
+    description: Free tier for developers to explore the API
+    price: 0
+    currency: USD
+    billing_period: month
+    requests_per_day: 1000
+    features:
+      - Headlines access
+      - Partial article access
+      - 3 months of history
+      - Basic email support
+      - API key authentication
+  - name: Builder
+    description: For builders and small applications
+    price: 69
+    currency: USD
+    billing_period: month
+    price_annual: 690
+    currency_annual: USD
+    requests_per_month: 75000
+    features:
+      - Headlines access
+      - Full article content
+      - 6 months of history
+      - Max 50 results per request
+      - Email support
+  - name: Professional
+    description: For professional applications and teams
+    price: 150
+    currency: USD
+    billing_period: month
+    price_annual: 1500
+    currency_annual: USD
+    requests_per_month: 300000
+    features:
+      - Headlines access
+      - Full article content
+      - 1 year of history
+      - Max 100 results per request
+      - Priority email support
+  - name: Enterprise
+    description: For large-scale applications and enterprise use cases
+    price: 300
+    currency: USD
+    billing_period: month
+    price_annual: 3000
+    currency_annual: USD
+    requests_per_month: 600000
+    features:
+      - Headlines access
+      - Full article content
+      - 1 year of history
+      - Max 200 results per request
+      - Dedicated support
+notes:
+  - Annual plans include 20% savings over monthly billing
+  - Cancellation allows downgrade to the free Developer tier
+  - 99.97% SLA uptime guarantee on paid plans
+  - Coverage includes 70+ countries, 20+ languages, 90,000+ daily articles
