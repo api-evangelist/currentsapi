@@ -2,7 +2,7 @@ aid: currentsapi
 name: Currents API
 description: Latest news REST API aggregating real-time global news from 120,000+ sources worldwide with search, language filtering, category filtering, topic-based queries, and regional coverage across 70+ countries in 20+ languages.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/currentsapi/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
