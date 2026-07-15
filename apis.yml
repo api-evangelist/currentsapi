@@ -40,6 +40,8 @@ apis:
         email: hi@currentsapi.services
         url: https://currentsapi.services/en
 common:
+  - type: AgenticAccess
+    url: agentic-access/currentsapi-agentic-access.yml
   - type: DomainSecurity
     url: security/currentsapi-domain-security.yml
   - type: Authentication
