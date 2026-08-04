@@ -1,0 +1,14 @@
+{
+  "provider": "currentsapi",
+  "sources": [
+    "currentsapi-endpoint-api-openapi.yml"
+  ],
+  "outputs": [
+    "currentsapi-endpoint-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
