@@ -1,0 +1,119 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Currents API Format endpoint API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "endpoint",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Search query results",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/search",
+            "params": [
+              {
+                "name": "language",
+                "value": "",
+                "type": "query",
+                "description": "Language values that need to be considered for filter"
+              },
+              {
+                "name": "keywords",
+                "value": "",
+                "type": "query",
+                "description": "Keyword values that need to be considered for filter"
+              },
+              {
+                "name": "country",
+                "value": "",
+                "type": "query",
+                "description": "Country values that need to be considered for filter"
+              },
+              {
+                "name": "category",
+                "value": "",
+                "type": "query",
+                "description": "Category values that need to be considered for filter"
+              },
+              {
+                "name": "start_date",
+                "value": "",
+                "type": "query",
+                "description": "Starting Date format should follow : YYYY-MM-DDTHH:MM:SS+00:00"
+              },
+              {
+                "name": "end_date",
+                "value": "",
+                "type": "query",
+                "description": "End Date format should follow : YYYY-MM-DDTHH:MM:SS+00:00"
+              }
+            ]
+          },
+          "docs": "Search query results"
+        },
+        {
+          "info": {
+            "name": "Get the latest news by language",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/latest-news",
+            "params": [
+              {
+                "name": "language",
+                "value": "",
+                "type": "query",
+                "description": "Status values that need to be considered for filter"
+              }
+            ]
+          },
+          "docs": "Multiple status values can be provided with comma separated strings"
+        },
+        {
+          "info": {
+            "name": "Valid language code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/available/languages"
+          },
+          "docs": "Obtain valid language code"
+        },
+        {
+          "info": {
+            "name": "Valid country region code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/available/regions"
+          },
+          "docs": "Obtain valid region code"
+        },
+        {
+          "info": {
+            "name": "Valid country region code",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "{{baseUrl}}/available/categories"
+          },
+          "docs": "Obtain valid region code"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

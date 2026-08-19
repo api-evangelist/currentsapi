@@ -1,0 +1,822 @@
+{
+  "item": [
+    {
+      "id": "f65d8987-b1b2-4f5a-bf9f-54881b5c35c2",
+      "name": "endpoint",
+      "description": {
+        "content": "Currents API Endpoint",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "49ff06ed-792e-446f-8205-772eab442a54",
+          "name": "Search query results",
+          "request": {
+            "name": "Search query results",
+            "description": {
+              "content": "",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "search"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>",
+                  "description": "Language values that need to be considered for filter"
+                },
+                {
+                  "disabled": false,
+                  "key": "keywords",
+                  "value": "<string>",
+                  "description": "Keyword values that need to be considered for filter"
+                },
+                {
+                  "disabled": false,
+                  "key": "country",
+                  "value": "<string>",
+                  "description": "Country values that need to be considered for filter"
+                },
+                {
+                  "disabled": false,
+                  "key": "category",
+                  "value": "<string>",
+                  "description": "Category values that need to be considered for filter"
+                },
+                {
+                  "disabled": false,
+                  "key": "start_date",
+                  "value": "<string>",
+                  "description": "Starting Date format should follow : YYYY-MM-DDTHH:MM:SS+00:00"
+                },
+                {
+                  "disabled": false,
+                  "key": "end_date",
+                  "value": "<string>",
+                  "description": "End Date format should follow : YYYY-MM-DDTHH:MM:SS+00:00"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "response": [
+            {
+              "id": "701056de-f0f8-4ff1-a5de-6c1e55ab14b7",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "category",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "start_date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "end_date",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"ok\",\n  \"news\": [\n    {\n      \"title\": \"Tulevaisuustutkija Markku Wilenius tietää, että 10 vuoden päästä elämme täysin erilaisessa maailmassa: \\\"Suuri herääminen on selvästi tapahtumassa\\\"\",\n      \"description\": \"Elämä on tähän saakka pyörinyt perustarpeiden ympärillä. Meille on riittänyt, että suuhun on saanut syötävää, on ollut paikka missä asua, puoliso, kavereita ja mahdollisuus hiukan toteuttaa itseään.\\nT...\",\n      \"url\": \"https://yle.fi/uutiset/3-10905769?origin=rss\",\n      \"author\": \"yle\",\n      \"image\": \"//images.cdn.yle.fi/image/upload/w_960,h_640/13-3-10906278.jpg\",\n      \"language\": \"fi\",\n      \"category\": [\n        \"general\"\n      ],\n      \"published\": \"2019-08-04 14:22:08 +0000\"\n    },\n    {\n      \"title\": \"Tubettaja muuttaa vuodeksi Sodankylään ja markkinoi kuntaa somessaan – 2 500 euron kuukausipalkka herättänyt närää kuntalaisissa\",\n      \"description\": \"Kunnissa tiedostetaan, kuinka tärkeää oikeiden mielikuvien luominen on, kun yritetään houkutella uusia asukkaita\\nMuuttoliike suuntautuu useimmin maalta kaupunkiin kuin toisin päin. Kaupunkilaista Fern...\",\n      \"url\": \"https://yle.fi/uutiset/3-10908157?origin=rss\",\n      \"author\": \"yle\",\n      \"image\": \"None\",\n      \"language\": \"fi\",\n      \"category\": [\n        \"general\"\n      ],\n      \"published\": \"2019-08-04 14:22:08 +0000\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "34569881-5f8a-4561-a246-2cd4b8e8e58f",
+              "name": "Unauthorized access",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "category",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "start_date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "end_date",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "4d920132-4105-4f13-9db3-38f3c93bc313",
+              "name": "Token limit reached",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "search"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "country",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "category",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "start_date",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "end_date",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "e0d6e483-5361-4207-9e60-be523519b308",
+          "name": "Get the latest news by language",
+          "request": {
+            "name": "Get the latest news by language",
+            "description": {
+              "content": "Multiple status values can be provided with comma separated strings",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "latest-news"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "language",
+                  "value": "<string>",
+                  "description": "Status values that need to be considered for filter"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "response": [
+            {
+              "id": "5be8c7ce-906e-4bbe-aec7-084a4fbce61d",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "latest-news"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"status\": \"ok\",\n  \"news\": [\n    {\n      \"title\": \"Tulevaisuustutkija Markku Wilenius tietää, että 10 vuoden päästä elämme täysin erilaisessa maailmassa: \\\"Suuri herääminen on selvästi tapahtumassa\\\"\",\n      \"description\": \"Elämä on tähän saakka pyörinyt perustarpeiden ympärillä. Meille on riittänyt, että suuhun on saanut syötävää, on ollut paikka missä asua, puoliso, kavereita ja mahdollisuus hiukan toteuttaa itseään.\\nT...\",\n      \"url\": \"https://yle.fi/uutiset/3-10905769?origin=rss\",\n      \"author\": \"yle\",\n      \"image\": \"//images.cdn.yle.fi/image/upload/w_960,h_640/13-3-10906278.jpg\",\n      \"language\": \"fi\",\n      \"category\": [\n        \"general\"\n      ],\n      \"published\": \"2019-08-04 14:22:08 +0000\"\n    },\n    {\n      \"title\": \"Tubettaja muuttaa vuodeksi Sodankylään ja markkinoi kuntaa somessaan – 2 500 euron kuukausipalkka herättänyt närää kuntalaisissa\",\n      \"description\": \"Kunnissa tiedostetaan, kuinka tärkeää oikeiden mielikuvien luominen on, kun yritetään houkutella uusia asukkaita\\nMuuttoliike suuntautuu useimmin maalta kaupunkiin kuin toisin päin. Kaupunkilaista Fern...\",\n      \"url\": \"https://yle.fi/uutiset/3-10908157?origin=rss\",\n      \"author\": \"yle\",\n      \"image\": \"None\",\n      \"language\": \"fi\",\n      \"category\": [\n        \"general\"\n      ],\n      \"published\": \"2019-08-04 14:22:08 +0000\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "667b5ac9-14d7-47ca-abee-05977613898e",
+              "name": "Unauthorized access",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "latest-news"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "d6837690-e492-422d-b32a-a6bdfc7a5a10",
+              "name": "Token limit reached",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "latest-news"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "language",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6d85736a-1976-4a3d-9254-47dfebec1f2a",
+          "name": "Valid language code",
+          "request": {
+            "name": "Valid language code",
+            "description": {
+              "content": "Obtain valid language code",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "available",
+                "languages"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "21d3a491-e468-4e0c-8ed5-80d390ce0c73",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "languages"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"languages\": {\n    \"Arabic\": \"ar\",\n    \"Chinese\": \"zh\",\n    \"Dutch\": \"nl\",\n    \"English\": \"en\",\n    \"Finnish\": \"fi\",\n    \"French\": \"fr\",\n    \"German\": \"de\",\n    \"Hindi\": \"hi\",\n    \"Italian\": \"it\",\n    \"Japanese\": \"ja\",\n    \"Korean\": \"ko\",\n    \"Malay\": \"msa\",\n    \"Portuguese\": \"pt\",\n    \"Russian\": \"ru\",\n    \"Spanish\": \"es\"\n  },\n  \"description\": \"available languages followed by query code\",\n  \"status\": \"ok\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "352235bc-d72c-4a31-af5b-72a2ba353483",
+              "name": "Unauthorized access",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "languages"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "922be923-c91b-4378-a311-e96e24bbbfb3",
+              "name": "Token limit reached",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "languages"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "6aeda22d-66f6-4219-baac-f8139b5df6a6",
+          "name": "Valid country region code",
+          "request": {
+            "name": "Valid country region code",
+            "description": {
+              "content": "Obtain valid region code",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "available",
+                "regions"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d96823ca-cab9-4074-803d-25c12046b097",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "regions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"regions\": {\n    \"Australia\": \"AS\",\n    \"\": \"PSE\",\n    \"Canada\": \"CA\",\n    \"China\": \"CN\",\n    \"Finland\": \"FI\",\n    \"South Korea\": \"SK\",\n    \"Taiwan\": \"TW\",\n    \"Thailand\": \"TH\",\n    \"Vietnam\": \"VIET\",\n    \"United State\": \"US\",\n    \"German\": \"GB\",\n    \"Zimbabwe\": \"ZW\",\n    \"Italy\": \"IT\"\n  },\n  \"description\": \"available regions followed by query code\",\n  \"status\": \"ok\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "7af040df-2714-4a88-ba72-d2639293ca97",
+              "name": "Unauthorized access",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "regions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "5407a4ef-b0c4-43d7-8969-339040006744",
+              "name": "Token limit reached",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "regions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "ef27343c-f0bf-429f-9541-d40dc954dbcd",
+          "name": "Valid country region code",
+          "request": {
+            "name": "Valid country region code",
+            "description": {
+              "content": "Obtain valid region code",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "available",
+                "categories"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5349c72c-02a8-4517-a2b7-d8c0c9218241",
+              "name": "successful operation",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"categories\": [\n    \"regional\",\n    \"technology\",\n    \"lifestyle\",\n    \"business\",\n    \"general\",\n    \"programming\",\n    \"science\",\n    \"entertainment\",\n    \"world\",\n    \"sports\",\n    \"finance\",\n    \"academia\",\n    \"politics\",\n    \"health\",\n    \"opinion\",\n    \"food\",\n    \"game\"\n  ],\n  \"description\": \"order by source count in descending order\",\n  \"status\": \"ok\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "57f5b441-1d0c-4ee0-ba36-d67d072b66f9",
+              "name": "Unauthorized access",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "85c012fa-f9f0-4c65-8072-8525cfa46210",
+              "name": "Token limit reached",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "available",
+                    "categories"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.currentsapi.services/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "d95b3dc1-2386-440d-8a62-eb32a2b8d098",
+    "name": "Currents API Format endpoint API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Currents API Endpoint\n\nContact Support:\n Email: hi@currentsapi.services",
+      "type": "text/plain"
+    }
+  }
+}
