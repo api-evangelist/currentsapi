@@ -32,7 +32,8 @@ apis:
   description: Currents API Endpoint
   humanURL: https://currentsapi.services/en
   baseURL: https://api.currentsapi.services/v1
-  tags:
+  tags: []
+  tags_raw:
   - endpoint
   properties:
   - type: OpenAPI
