@@ -1,0 +1,29 @@
+# Front Door AI Index — currentsapi — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: currentsapi
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: currentsapi.services
+  final_host: currentsapi.services
+  ownership: own
+  owner: currentsapi
+  shares_host_with:
+  - currents
+  inherited_from: null
+  verdict: scored
+  score: 6
+  host_score: 6
+  density: 4.16
+  words: 1443
+  tiers:
+    agentic: 2
+    core: 4
+    model: 0
+  ambiguous: 1
+  top_terms:
+    AI: 4
+    AI agent: 1
+    RAG: 1
+    agent: 1

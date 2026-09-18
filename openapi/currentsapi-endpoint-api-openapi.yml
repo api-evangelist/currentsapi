@@ -9,7 +9,7 @@ info:
 servers:
 - url: https://api.currentsapi.services/v1
 tags:
-- name: endpoint
+- name: Endpoint
   description: Currents API Endpoint
   externalDocs:
     description: Find out more
@@ -18,7 +18,7 @@ paths:
   /search:
     get:
       tags:
-      - endpoint
+      - Endpoint
       summary: Search query results
       description: ''
       operationId: search
@@ -104,7 +104,7 @@ paths:
   /latest-news:
     get:
       tags:
-      - endpoint
+      - Endpoint
       summary: Get the latest news by language
       description: Multiple status values can be provided with comma separated strings
       operationId: getLatestNews
@@ -160,7 +160,7 @@ paths:
   /available/languages:
     get:
       tags:
-      - endpoint
+      - Endpoint
       summary: Valid language code
       description: Obtain valid language code
       operationId: languages
@@ -197,7 +197,7 @@ paths:
   /available/regions:
     get:
       tags:
-      - endpoint
+      - Endpoint
       summary: Valid country region code
       description: Obtain valid region code
       responses:
@@ -229,10 +229,12 @@ paths:
           description: Unauthorized access
         '429':
           description: Token limit reached
+      operationId: getAvailableRegions
+      x-operation-id-source: derived
   /available/categories:
     get:
       tags:
-      - endpoint
+      - Endpoint
       summary: Valid country region code
       description: Obtain valid region code
       responses:
@@ -267,12 +269,10 @@ paths:
           description: Unauthorized access
         '429':
           description: Token limit reached
+      operationId: getAvailableCategories
+      x-operation-id-source: derived
 components:
   schemas:
-    Tag:
-      type: string
-      xml:
-        name: Tag
     News:
       type: object
       properties:
@@ -307,6 +307,10 @@ components:
           description: date string format
       xml:
         name: News
+    Tag:
+      type: string
+      xml:
+        name: Tag
   securitySchemes:
     ApiKeyAuth:
       type: apiKey
